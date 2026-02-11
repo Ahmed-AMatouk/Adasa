@@ -1,0 +1,169 @@
+@import "tailwindcss";
+
+
+:root {
+  font-family: "Tajawal", sans-serif;
+
+    --color-primary: #f97316;
+    --color-primary-light: #fb923c;
+    --color-primary-dark: #ea580c;
+    --color-accent: #fbbf24;
+    --color-dark: #0a0a0a;
+    --color-dark-secondary: #111;
+    --color-dark-tertiary: #1a1a1a;
+    --color-dark-card: #161616;
+    --color-border: #262626;
+    --color-border-light: #333;
+}
+  /* line-height: 1.5;
+  font-weight: 400; */
+
+  /* color-scheme: light dark; */
+  /* color: rgba(255, 255, 255, 0.87); */
+  /* background-color: #242424; */
+/* 
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+
+/* 
+a {
+  font-weight: 500;
+  color: #fff;
+  text-decoration: inherit;
+} */
+
+
+/* body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+} */
+
+ 
+a,button {
+  
+
+  cursor: pointer;
+}
+
+article {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+
+.section-title {
+    font-size: var(--text-6xl);
+    line-height: var(--tw-leading, var(--text-6xl--line-height));
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+
+  .section-subtitle {
+  margin-top: calc(var(--spacing) * 4);
+  font-size: var(--text-lg);
+  --tw-leading: var(--leading-relaxed);
+  line-height: var(--leading-relaxed);
+  color: var(--color-neutral-400);
+}
+
+
+.border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+    border-color: #262626;
+}
+
+.gradient-text {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(135deg, #f97316, #fbbf24);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.glass-card {
+    border-radius: var(--radius-3xl);
+    backdrop-filter: blur(20px);
+    background: #161616cc;
+    border: 1px solid #262626;
+}
+
+
+.btn-secondary {
+    cursor: pointer;
+    padding-inline: calc(var(--spacing) * 8);
+    padding-block: calc(var(--spacing) * 4);
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-white);
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: .3s;
+    background-color: #0000;
+    border: 1px solid #333;
+    border-radius: 3.40282e38px;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .3s;
+    display: inline-flex;
+}
+
+.section-label {
+    margin-bottom: calc(var(--spacing) * 6);
+    align-items: center;
+    gap: calc(var(--spacing) * 2);
+    padding-inline: calc(var(--spacing) * 4);
+    padding-block: calc(var(--spacing) * 2);
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+    color: #f97316;
+    background: #f973161a;
+    border: 1px solid #f973164d;
+    border-radius: 3.40282e38px;
+    display: inline-flex;
+}
+.section-label:before {
+    content: "";
+    height: calc(var(--spacing) * 1.5);
+    width: calc(var(--spacing) * 1.5);
+    background: #f97316;
+    border-radius: 3.40282e38px;
+    animation: 2s infinite pulse;
+}
+
+
+.input-dark {
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: .3s;
+    --tw-outline-style: none;
+    background: #161616;
+    border: 1px solid #262626;
+    outline-style: none;
+    transition-duration: .3s;
+    border-radius: var(--radius-xl);
+    color: var(--color-white);
+}
+
+.input-dark:focus {
+    border-color: #f97316;
+    box-shadow: 0 0 0 3px #f973161a;
+}
+
+.card {
+    border-radius: var(--radius-3xl);
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: .5s;
+    background: #161616;
+    border: 1px solid #262626;
+    transition-duration: .5s;
+    overflow: hidden;
+}
