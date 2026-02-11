@@ -131,7 +131,7 @@ export default function Blog() {
                       </div>
                     </div>
                   </Link></article> :
-                  <article className="group bg-[#161616] rounded-2xl border border-[#262626] hover:border-orange-500/30 transition-all duration-500 overflow-hidden w-full" style={{ animationDelay: `${indexFilter * 100}ms` }}><Link className="flex flex-col md:flex-row" href="/blog/portrait-photography-secrets" data-discover="true">
+                  <article className="group bg-[#161616] rounded-2xl border border-[#262626] hover:border-orange-500/30 transition-all duration-500 overflow-hidden w-full" style={{ animationDelay: `${indexFilter * 100}ms` }}><Link className="flex flex-col md:flex-row" to={`/blog/${element.slug}`} data-discover="true">
                     <div className="relative w-full md:w-72 lg:w-80 h-52 md:h-auto shrink-0 overflow-hidden"><img alt={element.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src={element.image} />
                       <div className="absolute inset-0 bg-linear-to-l from-[#161616]/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       </div>
