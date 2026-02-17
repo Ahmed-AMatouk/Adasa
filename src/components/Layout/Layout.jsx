@@ -14,7 +14,7 @@ export default function Layout() {
   const [blogs, setBlogs] = useState();
   const [loading, setLoading] = useState(true);
   async function getproducts(){
-    let data = await axios.get(`${import.meta.env.BASE_URL}posts.json`)
+    let data = await axios.get(`https://adasa-one-neon.vercel.app/posts.json`)
     console.log(data.data)
     setBlogs(data.data)
     setLoading(false)
